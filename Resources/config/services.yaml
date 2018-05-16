@@ -10,9 +10,3 @@ services:
     wh_vosfactures.curl_requester:
         class: 'WH\VosFacturesBundle\Services\CurlRequester'
         arguments: ['@service_container']
-
-    # A supprimer
-    wh_vosfactures.command_tmp:
-        class: 'WH\VosFacturesBundle\Command\AppDebugDevCommand'
-        arguments: ['?name', '@wh_vosfactures.bill_manager']
-        tags: ['console.command']
