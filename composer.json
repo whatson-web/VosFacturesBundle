@@ -1,0 +1,21 @@
+{
+  "name": "whatson-web/vos-factures-bundle",
+  "type": "symfony-bundle",
+  "description": "Symfony - Whatson Web - VosFacturesBundle",
+  "homepage": "https://github.com/whatson-web/VosFacturesBundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Whatson Web - Developers",
+      "email": "dev@whatson-web.com"
+    }
+  ],
+  "require": {
+    "php": "^7.1.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "WH\\VosFacturesBundle\\": ""
+    }
+  }
+}
