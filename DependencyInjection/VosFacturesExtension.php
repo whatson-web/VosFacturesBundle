@@ -23,8 +23,8 @@ class VosFacturesExtension extends Extension
 
         $config = $this->processConfiguration($configuration, $configs);
 
-        $container->setParameter('vos_factures.api_token', $config['api_token']);
-        $container->setParameter('vos_factures.account_name', explode('/', $config['api_token'])[1]);
-        $container->setParameter('vos_factures.testMode', $config['testMode']);
+        $container->setParameter('vos_factures.api_token', getenv('VOSFACTURES_APIKEY'));
+        $container->setParameter('vos_factures.account_name', getenv('VOSFACTURES_ACCOUNTNAME'));
+        $container->setParameter('vos_factures.testMode', getenv('VOSFACTURES_TESTMODE'));
     }
 }

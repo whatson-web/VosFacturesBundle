@@ -1,9 +1,11 @@
 # Installation
-Créer le fichier `config/packages/vos_factures.yaml`, avec le contenu suivant :
+Ajouter les variables d'environnements :
 
-    vos_factures:
-        api_token: 'LeTokenSuperSecret'
-        testMode: false // A passer à `true` une fois en production
+    ### vos factures ###
+    VOSFACTURES_APIKEY=vosfactures_api_token
+    VOSFACTURES_ACCOUNTNAME=vosfactures_account_name
+    VOSFACTURES_TESTMODE=true
+    ### vos factures ###
 
 Puis importer le projet :
 
